@@ -17,26 +17,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="balanceLabel" text="Label " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M85-fn-7eu" userLabel="balanceLabel">
-                                <rect key="frame" x="151" y="202" width="46" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsV-Kd-Z6x">
+                                <rect key="frame" x="164" y="524" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="balanceLabel" label="balanceLabel"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showChart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KL1-dL-JQ5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="balanceLabel" destination="M85-fn-7eu" id="8CE-uo-GZh"/>
-                        <outlet property="banlanceLabel" destination="M85-fn-7eu" id="bYm-BD-KgT"/>
+                        <outlet property="ButtonChart" destination="HsV-Kd-Z6x" id="mBQ-ih-piH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="40.799999999999997" y="26.53673163418291"/>
+        </scene>
+        <!--Pie Chart View Controller-->
+        <scene sceneID="63n-k6-dm8">
+            <objects>
+                <viewController id="r6x-s0-7Dp" customClass="PieChartViewController" customModule="Asistente" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I9D-hW-h5d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPX-Sa-6pR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xLA-oN-MXo" firstAttribute="bottom" secondItem="KPX-Sa-6pR" secondAttribute="bottom" id="GrX-jL-izt"/>
+                            <constraint firstItem="xLA-oN-MXo" firstAttribute="trailing" secondItem="KPX-Sa-6pR" secondAttribute="trailing" id="LCJ-lk-Fn4"/>
+                            <constraint firstItem="KPX-Sa-6pR" firstAttribute="top" secondItem="xLA-oN-MXo" secondAttribute="top" id="V9Z-IT-deO"/>
+                            <constraint firstItem="KPX-Sa-6pR" firstAttribute="leading" secondItem="xLA-oN-MXo" secondAttribute="leading" id="s71-Rz-Z3F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xLA-oN-MXo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZ0-un-K8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898" y="27"/>
         </scene>
     </scenes>
 </document>

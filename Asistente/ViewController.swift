@@ -13,7 +13,8 @@ import Intents
 class ViewController: UIViewController {
     
     @IBOutlet weak var balanceLabel: UILabel!
-
+    @IBOutlet weak var ButtonChart: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,4 +36,16 @@ class ViewController: UIViewController {
         guard let balance = BankAccount.checkBalance() else { return }
         balanceLabel.text = "Account Balance: $\(balance)"
     }
+    
+    @IBAction func showChart(_ sender: Any) {
+        
+        //let vcClass = PieChartViewController.self as UIViewController.Type
+        //let vc = vcClass.init()
+        //self.navigationController?.pushViewController(vc, animated: true)
+        let myViewController = PieChartViewController(nibName: "PieChartViewController", bundle: nil)
+        self.present(myViewController, animated: true, completion: nil)
+    
+    }
+    
+    
 }

@@ -20,6 +20,10 @@
 		7B0DF019217809B5001B2A81 /* Intents Handler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B0DF000217809B4001B2A81 /* Intents Handler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7B77CFD921781FE900F0959A /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B77CFD821781FE900F0959A /* BankAccount.swift */; };
 		7B77CFDB2178202D00F0959A /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B77CFD821781FE900F0959A /* BankAccount.swift */; };
+		DB52E013E6F59ED420FAAC99 /* Pods_Asistente.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD21C061549DE4F553A27BA /* Pods_Asistente.framework */; };
+		E95C34D52178FAD8009D7C73 /* PieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E95C34D42178FAD8009D7C73 /* PieChartViewController.xib */; };
+		E95C34DD2178FEB0009D7C73 /* DemoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95C34DC2178FEB0009D7C73 /* DemoBaseViewController.swift */; };
+		E95C34DF217915DF009D7C73 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95C34DE217915DF009D7C73 /* PieChartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		487D53F03564F323E9A37D10 /* Pods-Asistente.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asistente.release.xcconfig"; path = "Pods/Target Support Files/Pods-Asistente/Pods-Asistente.release.xcconfig"; sourceTree = "<group>"; };
+		68E8346B1D8827BB0C38CAEA /* Pods-Asistente.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asistente.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Asistente/Pods-Asistente.debug.xcconfig"; sourceTree = "<group>"; };
 		7B0DEFE6217807A5001B2A81 /* Asistente.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asistente.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0DEFE9217807A5001B2A81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B0DEFEB217807A5001B2A81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +78,10 @@
 		7B0DF011217809B5001B2A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		7B0DF013217809B5001B2A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B77CFD821781FE900F0959A /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
+		7CD21C061549DE4F553A27BA /* Pods_Asistente.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asistente.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95C34D42178FAD8009D7C73 /* PieChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PieChartViewController.xib; path = "../../Charts/ChartsDemo-iOS/XIBs/Demos/PieChartViewController.xib"; sourceTree = "<group>"; };
+		E95C34DC2178FEB0009D7C73 /* DemoBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoBaseViewController.swift; path = "../../../Charts/ChartsDemo-iOS/Swift/DemoBaseViewController.swift"; sourceTree = "<group>"; };
+		E95C34DE217915DF009D7C73 /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB52E013E6F59ED420FAAC99 /* Pods_Asistente.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +111,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		533759D2C952A7B0012B3259 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68E8346B1D8827BB0C38CAEA /* Pods-Asistente.debug.xcconfig */,
+				487D53F03564F323E9A37D10 /* Pods-Asistente.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7B0DEFDD217807A5001B2A81 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +128,7 @@
 				7B0DF00D217809B5001B2A81 /* Intents HandlerUI */,
 				7B0DF00A217809B5001B2A81 /* Frameworks */,
 				7B0DEFE7217807A5001B2A81 /* Products */,
+				533759D2C952A7B0012B3259 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +145,9 @@
 		7B0DEFE8217807A5001B2A81 /* Asistente */ = {
 			isa = PBXGroup;
 			children = (
+				E95C34DB2178FE73009D7C73 /* Utils */,
+				E95C34D62178FB6B009D7C73 /* ViewController */,
+				E95C34D42178FAD8009D7C73 /* PieChartViewController.xib */,
 				7B0DEFFB21780906001B2A81 /* Asistente.entitlements */,
 				7B0DEFE9217807A5001B2A81 /* AppDelegate.swift */,
 				7B0DEFEB217807A5001B2A81 /* ViewController.swift */,
@@ -149,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				7B0DF00B217809B5001B2A81 /* IntentsUI.framework */,
+				7CD21C061549DE4F553A27BA /* Pods_Asistente.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,6 +188,22 @@
 			path = "Intents HandlerUI";
 			sourceTree = "<group>";
 		};
+		E95C34D62178FB6B009D7C73 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E95C34DE217915DF009D7C73 /* PieChartViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E95C34DB2178FE73009D7C73 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E95C34DC2178FEB0009D7C73 /* DemoBaseViewController.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,10 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B0DEFF8217807A7001B2A81 /* Build configuration list for PBXNativeTarget "Asistente" */;
 			buildPhases = (
+				347369BBE9221005409938EA /* [CP] Check Pods Manifest.lock */,
 				7B0DEFE2217807A5001B2A81 /* Sources */,
 				7B0DEFE3217807A5001B2A81 /* Frameworks */,
 				7B0DEFE4217807A5001B2A81 /* Resources */,
 				7B0DF020217809B5001B2A81 /* Embed App Extensions */,
+				156B3BE88ACF6FCD67B7C16C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,6 +316,7 @@
 			files = (
 				7B0DEFF4217807A7001B2A81 /* LaunchScreen.storyboard in Resources */,
 				7B0DEFF1217807A7001B2A81 /* Assets.xcassets in Resources */,
+				E95C34D52178FAD8009D7C73 /* PieChartViewController.xib in Resources */,
 				7B0DEFEF217807A5001B2A81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,11 +338,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		156B3BE88ACF6FCD67B7C16C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Asistente/Pods-Asistente-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Asistente/Pods-Asistente-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		347369BBE9221005409938EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Asistente-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B0DEFE2217807A5001B2A81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E95C34DD2178FEB0009D7C73 /* DemoBaseViewController.swift in Sources */,
+				E95C34DF217915DF009D7C73 /* PieChartViewController.swift in Sources */,
 				7B0DEFEC217807A5001B2A81 /* ViewController.swift in Sources */,
 				7B77CFD921781FE900F0959A /* BankAccount.swift in Sources */,
 				7B0DEFEA217807A5001B2A81 /* AppDelegate.swift in Sources */,
@@ -483,6 +576,7 @@
 		};
 		7B0DEFF9217807A7001B2A81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68E8346B1D8827BB0C38CAEA /* Pods-Asistente.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -503,6 +597,7 @@
 		};
 		7B0DEFFA217807A7001B2A81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 487D53F03564F323E9A37D10 /* Pods-Asistente.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
