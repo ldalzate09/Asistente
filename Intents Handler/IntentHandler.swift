@@ -35,6 +35,14 @@ class IntentHandler: INExtension, INSendPaymentIntentHandling, INRequestPaymentI
     func handle(intent: INPayBillIntent, completion: @escaping (INPayBillIntentResponse) -> Void) {
         print("Pagar Factura:", intent)
         
+        guard let amount = intent.transactionAmount?.amount?.amount?.doubleValue else {
+            print("Fallo:", intent)
+            completion(INPayBillIntentResponse(code: .failure, userActivity: nil))
+            return
+        }
+        BankAccount.withdraw(amount: amount)
+        print("Todo bien:", intent)
+        completion(INPayBillIntentResponse(code: .success, userActivity: nil))
     }
 }
 
