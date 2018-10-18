@@ -21,8 +21,6 @@ class ViewController: UIViewController {
             
         }
         
-        INVocabulary.shared().setVocabularyStrings(["push up", "sit up", "pull up"], of: .workoutActivityName)
-        
         if BankAccount.checkBalance()!.isZero {
             BankAccount.setBalance(toAmount: 1000)
         }

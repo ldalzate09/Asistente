@@ -41,7 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let interaction = userActivity.interaction, let intent = interaction.intent as? INSendPaymentIntent, let payee = intent.payee {
             print("Paying \(payee.displayName) \(intent.currencyAmount!.amount!)")
         }
-        
         return true
     }
 }

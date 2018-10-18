@@ -28,9 +28,8 @@
 			<array/>
 			<key>IntentsSupported</key>
 			<array>
+				<string>INPayBillIntent</string>
 				<string>INSendPaymentIntent</string>
-				<string>INEndWorkoutIntent</string>
-				<string>INStartWorkoutIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>

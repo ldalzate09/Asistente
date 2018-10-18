@@ -9,24 +9,7 @@
 import Intents
 
 
-class IntentHandler: INExtension, INStartWorkoutIntentHandling, INEndWorkoutIntentHandling, INSendPaymentIntentHandling, INRequestPaymentIntentHandling {
-    
-    func handle(intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {
-     
-        print("Start Workout Intent:", intent)
-        
-        let userActivity: NSUserActivity? = nil
-        guard let spokenPhrase = intent.workoutName?.spokenPhrase else {
-            completion(INStartWorkoutIntentResponse(code: .failureNoMatchingWorkout, userActivity: userActivity))
-            return
-        }
-        
-        completion(INStartWorkoutIntentResponse(code: .continueInApp, userActivity: userActivity))
-    }
-    
-    func handle(intent: INEndWorkoutIntent, completion: @escaping (INEndWorkoutIntentResponse) -> Void) {
-        
-    }
+class IntentHandler: INExtension, INSendPaymentIntentHandling, INRequestPaymentIntentHandling, INPayBillIntentHandling {
     
     func handle(intent: INSendPaymentIntent, completion: @escaping (INSendPaymentIntentResponse) -> Void) {
         print("Hacer un pago:", intent)
@@ -47,6 +30,11 @@ class IntentHandler: INExtension, INStartWorkoutIntentHandling, INEndWorkoutInte
         }
         BankAccount.deposit(amount: amount)
         completion(INRequestPaymentIntentResponse(code: .success, userActivity: nil))
+    }
+    
+    func handle(intent: INPayBillIntent, completion: @escaping (INPayBillIntentResponse) -> Void) {
+        print("Pagar Factura:", intent)
+        
     }
 }
 
