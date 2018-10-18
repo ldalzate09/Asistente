@@ -17,8 +17,18 @@ class IntentHandler: INExtension, INSendPaymentIntentHandling, INRequestPaymentI
             completion(INSendPaymentIntentResponse(code: .failure, userActivity: nil))
             return
         }
+        
         BankAccount.withdraw(amount: amount)
         completion(INSendPaymentIntentResponse(code: .success, userActivity: nil))
+    }
+    
+    func confirm(intent: INSendPaymentIntent, completion: @escaping (INSendPaymentIntentResponse) -> Void) {
+        print("confirmar:", intent)
+
+        let response = INSendPaymentIntentResponse(code: .ready, userActivity: nil)
+        response.paymentRecord = INPaymentRecord(payee: intent.payee, payer: nil, currencyAmount: intent.currencyAmount, paymentMethod: nil, note: intent.note, status: .pending)
+        
+        completion(response)
     }
     
     
