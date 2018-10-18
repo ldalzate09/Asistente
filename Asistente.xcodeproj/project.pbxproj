@@ -12,7 +12,47 @@
 		7B0DEFEF217807A5001B2A81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0DEFED217807A5001B2A81 /* Main.storyboard */; };
 		7B0DEFF1217807A7001B2A81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B0DEFF0217807A7001B2A81 /* Assets.xcassets */; };
 		7B0DEFF4217807A7001B2A81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0DEFF2217807A7001B2A81 /* LaunchScreen.storyboard */; };
+		7B0DF003217809B4001B2A81 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0DF002217809B4001B2A81 /* IntentHandler.swift */; };
+		7B0DF00C217809B5001B2A81 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0DF00B217809B5001B2A81 /* IntentsUI.framework */; };
+		7B0DF00F217809B5001B2A81 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0DF00E217809B5001B2A81 /* IntentViewController.swift */; };
+		7B0DF012217809B5001B2A81 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0DF010217809B5001B2A81 /* MainInterface.storyboard */; };
+		7B0DF016217809B5001B2A81 /* Intents HandlerUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B0DF009217809B5001B2A81 /* Intents HandlerUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7B0DF019217809B5001B2A81 /* Intents Handler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B0DF000217809B4001B2A81 /* Intents Handler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7B77CFD921781FE900F0959A /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B77CFD821781FE900F0959A /* BankAccount.swift */; };
+		7B77CFDB2178202D00F0959A /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B77CFD821781FE900F0959A /* BankAccount.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B0DF014217809B5001B2A81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B0DEFDE217807A5001B2A81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B0DF008217809B5001B2A81;
+			remoteInfo = "Intents HandlerUI";
+		};
+		7B0DF017217809B5001B2A81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B0DEFDE217807A5001B2A81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B0DEFFF217809B4001B2A81;
+			remoteInfo = "Intents Handler";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B0DF020217809B5001B2A81 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7B0DF019217809B5001B2A81 /* Intents Handler.appex in Embed App Extensions */,
+				7B0DF016217809B5001B2A81 /* Intents HandlerUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7B0DEFE6217807A5001B2A81 /* Asistente.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asistente.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +62,16 @@
 		7B0DEFF0217807A7001B2A81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B0DEFF3217807A7001B2A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B0DEFF5217807A7001B2A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B0DEFFB21780906001B2A81 /* Asistente.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Asistente.entitlements; sourceTree = "<group>"; };
+		7B0DF000217809B4001B2A81 /* Intents Handler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Intents Handler.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B0DF002217809B4001B2A81 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		7B0DF004217809B4001B2A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B0DF009217809B5001B2A81 /* Intents HandlerUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Intents HandlerUI.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B0DF00B217809B5001B2A81 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		7B0DF00E217809B5001B2A81 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		7B0DF011217809B5001B2A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		7B0DF013217809B5001B2A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B77CFD821781FE900F0959A /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +82,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B0DEFFD217809B4001B2A81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B0DF006217809B5001B2A81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0DF00C217809B5001B2A81 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				7B0DEFE8217807A5001B2A81 /* Asistente */,
+				7B0DF001217809B4001B2A81 /* Intents Handler */,
+				7B0DF00D217809B5001B2A81 /* Intents HandlerUI */,
+				7B0DF00A217809B5001B2A81 /* Frameworks */,
 				7B0DEFE7217807A5001B2A81 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				7B0DEFE6217807A5001B2A81 /* Asistente.app */,
+				7B0DF000217809B4001B2A81 /* Intents Handler.appex */,
+				7B0DF009217809B5001B2A81 /* Intents HandlerUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +124,43 @@
 		7B0DEFE8217807A5001B2A81 /* Asistente */ = {
 			isa = PBXGroup;
 			children = (
+				7B0DEFFB21780906001B2A81 /* Asistente.entitlements */,
 				7B0DEFE9217807A5001B2A81 /* AppDelegate.swift */,
 				7B0DEFEB217807A5001B2A81 /* ViewController.swift */,
 				7B0DEFED217807A5001B2A81 /* Main.storyboard */,
 				7B0DEFF0217807A7001B2A81 /* Assets.xcassets */,
 				7B0DEFF2217807A7001B2A81 /* LaunchScreen.storyboard */,
 				7B0DEFF5217807A7001B2A81 /* Info.plist */,
+				7B77CFD821781FE900F0959A /* BankAccount.swift */,
 			);
 			path = Asistente;
+			sourceTree = "<group>";
+		};
+		7B0DF001217809B4001B2A81 /* Intents Handler */ = {
+			isa = PBXGroup;
+			children = (
+				7B0DF002217809B4001B2A81 /* IntentHandler.swift */,
+				7B0DF004217809B4001B2A81 /* Info.plist */,
+			);
+			path = "Intents Handler";
+			sourceTree = "<group>";
+		};
+		7B0DF00A217809B5001B2A81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B0DF00B217809B5001B2A81 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B0DF00D217809B5001B2A81 /* Intents HandlerUI */ = {
+			isa = PBXGroup;
+			children = (
+				7B0DF00E217809B5001B2A81 /* IntentViewController.swift */,
+				7B0DF010217809B5001B2A81 /* MainInterface.storyboard */,
+				7B0DF013217809B5001B2A81 /* Info.plist */,
+			);
+			path = "Intents HandlerUI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +173,52 @@
 				7B0DEFE2217807A5001B2A81 /* Sources */,
 				7B0DEFE3217807A5001B2A81 /* Frameworks */,
 				7B0DEFE4217807A5001B2A81 /* Resources */,
+				7B0DF020217809B5001B2A81 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7B0DF015217809B5001B2A81 /* PBXTargetDependency */,
+				7B0DF018217809B5001B2A81 /* PBXTargetDependency */,
 			);
 			name = Asistente;
 			productName = Asistente;
 			productReference = 7B0DEFE6217807A5001B2A81 /* Asistente.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7B0DEFFF217809B4001B2A81 /* Intents Handler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B0DF01D217809B5001B2A81 /* Build configuration list for PBXNativeTarget "Intents Handler" */;
+			buildPhases = (
+				7B0DEFFC217809B4001B2A81 /* Sources */,
+				7B0DEFFD217809B4001B2A81 /* Frameworks */,
+				7B0DEFFE217809B4001B2A81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Intents Handler";
+			productName = "Intents Handler";
+			productReference = 7B0DF000217809B4001B2A81 /* Intents Handler.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		7B0DF008217809B5001B2A81 /* Intents HandlerUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B0DF01A217809B5001B2A81 /* Build configuration list for PBXNativeTarget "Intents HandlerUI" */;
+			buildPhases = (
+				7B0DF005217809B5001B2A81 /* Sources */,
+				7B0DF006217809B5001B2A81 /* Frameworks */,
+				7B0DF007217809B5001B2A81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Intents HandlerUI";
+			productName = "Intents HandlerUI";
+			productReference = 7B0DF009217809B5001B2A81 /* Intents HandlerUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +231,17 @@
 				ORGANIZATIONNAME = "Leydy Alzate";
 				TargetAttributes = {
 					7B0DEFE5217807A5001B2A81 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					7B0DEFFF217809B4001B2A81 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					7B0DF008217809B5001B2A81 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -113,6 +260,8 @@
 			projectRoot = "";
 			targets = (
 				7B0DEFE5217807A5001B2A81 /* Asistente */,
+				7B0DEFFF217809B4001B2A81 /* Intents Handler */,
+				7B0DF008217809B5001B2A81 /* Intents HandlerUI */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +277,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B0DEFFE217809B4001B2A81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B0DF007217809B5001B2A81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0DF012217809B5001B2A81 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,11 +300,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B0DEFEC217807A5001B2A81 /* ViewController.swift in Sources */,
+				7B77CFD921781FE900F0959A /* BankAccount.swift in Sources */,
 				7B0DEFEA217807A5001B2A81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B0DEFFC217809B4001B2A81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0DF003217809B4001B2A81 /* IntentHandler.swift in Sources */,
+				7B77CFDB2178202D00F0959A /* BankAccount.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B0DF005217809B5001B2A81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0DF00F217809B5001B2A81 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B0DF015217809B5001B2A81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B0DF008217809B5001B2A81 /* Intents HandlerUI */;
+			targetProxy = 7B0DF014217809B5001B2A81 /* PBXContainerItemProxy */;
+		};
+		7B0DF018217809B5001B2A81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B0DEFFF217809B4001B2A81 /* Intents Handler */;
+			targetProxy = 7B0DF017217809B5001B2A81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7B0DEFED217807A5001B2A81 /* Main.storyboard */ = {
@@ -157,6 +352,14 @@
 				7B0DEFF3217807A7001B2A81 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7B0DF010217809B5001B2A81 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B0DF011217809B5001B2A81 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,14 +484,17 @@
 		7B0DEFF9217807A7001B2A81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Asistente/Asistente.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 925Y77FG78;
 				INFOPLIST_FILE = Asistente/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bancolombia.Asistente;
+				PRODUCT_BUNDLE_IDENTIFIER = "-25Y77FG78.co.com.bancolombia.eliza";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,15 +504,94 @@
 		7B0DEFFA217807A7001B2A81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Asistente/Asistente.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 925Y77FG78;
 				INFOPLIST_FILE = Asistente/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bancolombia.Asistente;
+				PRODUCT_BUNDLE_IDENTIFIER = "-25Y77FG78.co.com.bancolombia.eliza";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B0DF01B217809B5001B2A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 925Y77FG78;
+				INFOPLIST_FILE = "Intents HandlerUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-25Y77FG78.co.com.bancolombia.eliza.Intents-HandlerUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B0DF01C217809B5001B2A81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 925Y77FG78;
+				INFOPLIST_FILE = "Intents HandlerUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-25Y77FG78.co.com.bancolombia.eliza.Intents-HandlerUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B0DF01E217809B5001B2A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 925Y77FG78;
+				INFOPLIST_FILE = "Intents Handler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-25Y77FG78.co.com.bancolombia.eliza.Intents-Handler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B0DF01F217809B5001B2A81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 925Y77FG78;
+				INFOPLIST_FILE = "Intents Handler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-25Y77FG78.co.com.bancolombia.eliza.Intents-Handler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,6 +614,24 @@
 			buildConfigurations = (
 				7B0DEFF9217807A7001B2A81 /* Debug */,
 				7B0DEFFA217807A7001B2A81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B0DF01A217809B5001B2A81 /* Build configuration list for PBXNativeTarget "Intents HandlerUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B0DF01B217809B5001B2A81 /* Debug */,
+				7B0DF01C217809B5001B2A81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B0DF01D217809B5001B2A81 /* Build configuration list for PBXNativeTarget "Intents Handler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B0DF01E217809B5001B2A81 /* Debug */,
+				7B0DF01F217809B5001B2A81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

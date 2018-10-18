@@ -1,20 +1,40 @@
 //
 //  ViewController.swift
-//  Asistente
+//  Pizza Reverse
 //
-//  Created by Leydy Alzate on 10/17/18.
-//  Copyright © 2018 Leydy Alzate. All rights reserved.
+//  Created by Simon Ng on 5/6/2017.
+//  Code written by Jayven Nhan
+//  Copyright © 2017 AppCoda. All rights reserved.
 //
 
 import UIKit
+import Intents
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var balanceLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        INPreferences.requestSiriAuthorization { (status) in
+            
+        }
+        
+        INVocabulary.shared().setVocabularyStrings(["push up", "sit up", "pull up"], of: .workoutActivityName)
+        
+        if BankAccount.checkBalance()!.isZero {
+            BankAccount.setBalance(toAmount: 1000)
+        }
     }
-
-
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func checkBalance() {
+        guard let balance = BankAccount.checkBalance() else { return }
+        balanceLabel.text = "Account Balance: $\(balance)"
+    }
 }
-

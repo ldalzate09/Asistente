@@ -1,23 +1,19 @@
 //
 //  AppDelegate.swift
-//  Asistente
+//  Pizza Reverse
 //
-//  Created by Leydy Alzate on 10/17/18.
-//  Copyright © 2018 Leydy Alzate. All rights reserved.
+//  Created by Simon Ng on 5/6/2017.
+//  Code written by Jayven Nhan
+//  Copyright © 2017 AppCoda. All rights reserved.
 //
 
 import UIKit
+import Intents
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
-    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -41,6 +37,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    private func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        if let interaction = userActivity.interaction, let intent = interaction.intent as? INSendPaymentIntent, let payee = intent.payee {
+            print("Paying \(payee.displayName) \(intent.currencyAmount!.amount!)")
+        }
+        
+        return true
+    }
 }
 
