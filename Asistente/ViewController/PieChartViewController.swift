@@ -82,7 +82,7 @@ class PieChartViewController: DemoBaseViewController {
                                      icon: #imageLiteral(resourceName: "icon"))
         }
         
-        let set = PieChartDataSet(values: entries, label: "Election Results")
+        let set = PieChartDataSet(values: entries, label: "")
         set.drawIconsEnabled = false
         set.sliceSpace = 2
         
@@ -104,7 +104,7 @@ class PieChartViewController: DemoBaseViewController {
         pFormatter.percentSymbol = " %"
         data.setValueFormatter(DefaultValueFormatter(formatter: pFormatter))
         
-        data.setValueFont(.systemFont(ofSize: 9, weight: .light))
+        data.setValueFont(.systemFont(ofSize: 10, weight: .light))
         data.setValueTextColor(.black)
         
         chartView.data = data

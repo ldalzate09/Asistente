@@ -18,13 +18,20 @@ class IntentHandler: INExtension, INSendPaymentIntentHandling, INRequestPaymentI
             return
         }
         
-        BankAccount.withdraw(amount: amount)
-        completion(INSendPaymentIntentResponse(code: .success, userActivity: nil))
+        if ((BankAccount.checkBalance()?.isLess(than: amount))!)
+        {
+            completion(INSendPaymentIntentResponse(code: .failureInsufficientFunds, userActivity: nil))
+        }
+        else
+        {
+            BankAccount.withdraw(amount: amount)
+            completion(INSendPaymentIntentResponse(code: .success, userActivity: nil))
+        }
     }
     
     func confirm(intent: INSendPaymentIntent, completion: @escaping (INSendPaymentIntentResponse) -> Void) {
         print("confirmar:", intent)
-
+        
         let response = INSendPaymentIntentResponse(code: .ready, userActivity: nil)
         response.paymentRecord = INPaymentRecord(payee: intent.payee, payer: nil, currencyAmount: intent.currencyAmount, paymentMethod: nil, note: intent.note, status: .pending)
         
@@ -55,4 +62,3 @@ class IntentHandler: INExtension, INSendPaymentIntentHandling, INRequestPaymentI
         completion(INPayBillIntentResponse(code: .success, userActivity: nil))
     }
 }
-

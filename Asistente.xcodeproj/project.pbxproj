@@ -20,7 +20,7 @@
 		7B0DF019217809B5001B2A81 /* Intents Handler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B0DF000217809B4001B2A81 /* Intents Handler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7B77CFD921781FE900F0959A /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B77CFD821781FE900F0959A /* BankAccount.swift */; };
 		7B77CFDB2178202D00F0959A /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B77CFD821781FE900F0959A /* BankAccount.swift */; };
-		7B7E4ADC21797D7700997BFA /* fondofinal.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E4ADB21797D7700997BFA /* fondofinal.jpeg */; };
+		7BAC0457217985D6001B6D3A /* fondofinal.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC0456217985D6001B6D3A /* fondofinal.jpeg */; };
 		DB52E013E6F59ED420FAAC99 /* Pods_Asistente.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD21C061549DE4F553A27BA /* Pods_Asistente.framework */; };
 		E93417F92179648300693BC7 /* DemoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93417F82179648300693BC7 /* DemoBaseViewController.swift */; };
 		E934180021796F0700693BC7 /* PieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E93417FF21796F0700693BC7 /* PieChartViewController.xib */; };
@@ -79,7 +79,9 @@
 		7B0DF011217809B5001B2A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		7B0DF013217809B5001B2A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B77CFD821781FE900F0959A /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
-		7B7E4ADB21797D7700997BFA /* fondofinal.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fondofinal.jpeg; path = ../../Downloads/fondofinal.jpeg; sourceTree = "<group>"; };
+		7BAC0456217985D6001B6D3A /* fondofinal.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondofinal.jpeg; sourceTree = "<group>"; };
+		7BAC045821799A7C001B6D3A /* Intents Handler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Intents Handler.entitlements"; sourceTree = "<group>"; };
+		7BAC045921799A87001B6D3A /* Intents HandlerUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Intents HandlerUI.entitlements"; sourceTree = "<group>"; };
 		7CD21C061549DE4F553A27BA /* Pods_Asistente.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asistente.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93417F82179648300693BC7 /* DemoBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBaseViewController.swift; sourceTree = "<group>"; };
 		E93417FF21796F0700693BC7 /* PieChartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PieChartViewController.xib; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		7B0DEFDD217807A5001B2A81 = {
 			isa = PBXGroup;
 			children = (
+				7B7E4ADD2179853C00997BFA /* Resources */,
 				7B0DEFE8217807A5001B2A81 /* Asistente */,
 				7B0DF001217809B4001B2A81 /* Intents Handler */,
 				7B0DF00D217809B5001B2A81 /* Intents HandlerUI */,
@@ -147,7 +150,6 @@
 		7B0DEFE8217807A5001B2A81 /* Asistente */ = {
 			isa = PBXGroup;
 			children = (
-				7B7E4ADB21797D7700997BFA /* fondofinal.jpeg */,
 				E95C34DB2178FE73009D7C73 /* Utils */,
 				E95C34D62178FB6B009D7C73 /* ViewController */,
 				7B0DEFFB21780906001B2A81 /* Asistente.entitlements */,
@@ -166,6 +168,7 @@
 		7B0DF001217809B4001B2A81 /* Intents Handler */ = {
 			isa = PBXGroup;
 			children = (
+				7BAC045821799A7C001B6D3A /* Intents Handler.entitlements */,
 				7B0DF002217809B4001B2A81 /* IntentHandler.swift */,
 				7B0DF004217809B4001B2A81 /* Info.plist */,
 			);
@@ -184,11 +187,20 @@
 		7B0DF00D217809B5001B2A81 /* Intents HandlerUI */ = {
 			isa = PBXGroup;
 			children = (
+				7BAC045921799A87001B6D3A /* Intents HandlerUI.entitlements */,
 				7B0DF00E217809B5001B2A81 /* IntentViewController.swift */,
 				7B0DF010217809B5001B2A81 /* MainInterface.storyboard */,
 				7B0DF013217809B5001B2A81 /* Info.plist */,
 			);
 			path = "Intents HandlerUI";
+			sourceTree = "<group>";
+		};
+		7B7E4ADD2179853C00997BFA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7BAC0456217985D6001B6D3A /* fondofinal.jpeg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		E95C34D62178FB6B009D7C73 /* ViewController */ = {
@@ -289,9 +301,19 @@
 					};
 					7B0DEFFF217809B4001B2A81 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					7B0DF008217809B5001B2A81 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -322,7 +344,7 @@
 			files = (
 				7B0DEFF4217807A7001B2A81 /* LaunchScreen.storyboard in Resources */,
 				7B0DEFF1217807A7001B2A81 /* Assets.xcassets in Resources */,
-				7B7E4ADC21797D7700997BFA /* fondofinal.jpeg in Resources */,
+				7BAC0457217985D6001B6D3A /* fondofinal.jpeg in Resources */,
 				E934180021796F0700693BC7 /* PieChartViewController.xib in Resources */,
 				7B0DEFEF217807A5001B2A81 /* Main.storyboard in Resources */,
 			);
@@ -626,6 +648,7 @@
 		7B0DF01B217809B5001B2A81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Intents HandlerUI/Intents HandlerUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 925Y77FG78;
 				INFOPLIST_FILE = "Intents HandlerUI/Info.plist";
@@ -645,6 +668,7 @@
 		7B0DF01C217809B5001B2A81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Intents HandlerUI/Intents HandlerUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 925Y77FG78;
 				INFOPLIST_FILE = "Intents HandlerUI/Info.plist";
@@ -664,6 +688,7 @@
 		7B0DF01E217809B5001B2A81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Intents Handler/Intents Handler.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 925Y77FG78;
 				INFOPLIST_FILE = "Intents Handler/Info.plist";
@@ -683,6 +708,7 @@
 		7B0DF01F217809B5001B2A81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Intents Handler/Intents Handler.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 925Y77FG78;
 				INFOPLIST_FILE = "Intents Handler/Info.plist";
