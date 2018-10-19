@@ -89,7 +89,7 @@ enum Option {
 
 class DemoBaseViewController: UIViewController, ChartViewDelegate {
     private var optionsTableView: UITableView? = nil
-    let parties = ["Entradas Cine", "Paquete turistico", "Pago EPM", "Envio Dinero"]
+    let parties = ["Entradas Cine", "Paquete turistico", "Pago EPM", "Envio Dinero", "Preaprobado"]
     
     @IBOutlet weak var optionsButton: UIButton!
     var options: [Option]!
@@ -176,7 +176,7 @@ class DemoBaseViewController: UIViewController, ChartViewDelegate {
         }
         
         let optionsTableView = UITableView()
-        optionsTableView.backgroundColor = UIColor(white: 0, alpha: 0.9)
+        optionsTableView.backgroundColor = UIColor(white: 0.7, alpha: 0.9)
         optionsTableView.delegate = self
         optionsTableView.dataSource = self
         
@@ -241,7 +241,7 @@ class DemoBaseViewController: UIViewController, ChartViewDelegate {
         paragraphStyle.lineBreakMode = .byTruncatingTail
         paragraphStyle.alignment = .center
         
-        let centerText = NSMutableAttributedString(string: "Charts\nby Daniel Cohen Gindi")
+        let centerText = NSMutableAttributedString(string: "Charts\nby Insight Team")
         centerText.setAttributes([.font : UIFont(name: "HelveticaNeue-Light", size: 13)!,
                                   .paragraphStyle : paragraphStyle], range: NSRange(location: 0, length: centerText.length))
         centerText.addAttributes([.font : UIFont(name: "HelveticaNeue-Light", size: 11)!,

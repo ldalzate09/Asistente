@@ -14,6 +14,7 @@ class PieChartViewController: DemoBaseViewController {
 
     @IBOutlet weak var chartView: PieChartView!
     @IBOutlet weak var balanceButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -158,12 +159,15 @@ class PieChartViewController: DemoBaseViewController {
         
         let string = "Tienes un pre aprobado por seis millones de pesos, ¿Deseas tomarlo?"
         let utterance = AVSpeechUtterance(string: string)
-        utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")
+        utterance.voice = AVSpeechSynthesisVoice(language: "es-LA")
         
         let synth = AVSpeechSynthesizer()
         synth.speak(utterance)
     }
     
+    @IBAction func cancelViewController(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     /*
     // MARK: - Navigation
