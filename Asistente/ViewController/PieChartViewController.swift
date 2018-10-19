@@ -19,6 +19,9 @@ class PieChartViewController: DemoBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        guard let balance = BankAccount.checkBalance() else { return }
+        balanceButton.setTitle("Account Balance: $\(balance)", for: .normal) 
+        
         // Do any additional setup after loading the view.
         self.title = "Pie Chart"
         
@@ -153,7 +156,10 @@ class PieChartViewController: DemoBaseViewController {
     @IBAction func showPreAprob(_ sender: Any) {
         
         let alert = UIAlertController(title: "Pre Aprobado", message: "Tienen un pre aprobado por $6'000.000", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: { action in
+            BankAccount.deposit(amount: 6000000)
+            self.setDataCount(Int(5), range: UInt32(100))
+        }))
         alert.addAction(UIAlertAction(title: "Cancelar", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         
