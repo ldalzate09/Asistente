@@ -171,7 +171,7 @@ class PieChartViewController: DemoBaseViewController {
         
         let string = "Tienes un pre aprobado por seis millones de pesos, ¿Deseas tomarlo?"
         let utterance = AVSpeechUtterance(string: string)
-        utterance.voice = AVSpeechSynthesisVoice(language: "es-LA")
+        utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")
         
         let synth = AVSpeechSynthesizer()
         synth.speak(utterance)
