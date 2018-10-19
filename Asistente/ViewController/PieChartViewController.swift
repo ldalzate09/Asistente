@@ -51,6 +51,9 @@ class PieChartViewController: DemoBaseViewController {
         l.yOffset = 0
         //        chartView.legend = l
         
+        self.balanceButton.layer.cornerRadius = 5
+        self.balanceButton.clipsToBounds = true
+        
         // entry label styling
         chartView.entryLabelColor = .white
         chartView.entryLabelFont = .systemFont(ofSize: 12, weight: .light)
