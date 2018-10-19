@@ -92,7 +92,8 @@ class PieChartViewController: DemoBaseViewController {
             + ChartColorTemplates.colorful()
             + ChartColorTemplates.liberty()
             + ChartColorTemplates.pastel()
-            + [UIColor(red: 51/255, green: 181/255, blue: 229/255, alpha: 1)]
+            + [UIColor (red: 45/255, green: 45/255, blue: 250/255, alpha: 1)]
+            //+ [UIColor (red: 51/255, green: 181/255, blue: 229/255, alpha: 1)]
         
         let data = PieChartData(dataSet: set)
         
@@ -103,8 +104,8 @@ class PieChartViewController: DemoBaseViewController {
         pFormatter.percentSymbol = " %"
         data.setValueFormatter(DefaultValueFormatter(formatter: pFormatter))
         
-        data.setValueFont(.systemFont(ofSize: 11, weight: .light))
-        data.setValueTextColor(.white)
+        data.setValueFont(.systemFont(ofSize: 9, weight: .light))
+        data.setValueTextColor(.black)
         
         chartView.data = data
         chartView.highlightValues(nil)
