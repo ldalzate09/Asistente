@@ -20,7 +20,11 @@ class PieChartViewController: DemoBaseViewController {
         super.viewDidLoad()
         
         guard let balance = BankAccount.checkBalance() else { return }
-        balanceButton.setTitle("Saldo Disponible: $\(balance)", for: .normal)
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.string(from: balance as NSNumber)
+        
+        balanceButton.setTitle("Saldo Disponible: \(formatter.string(from: balance as NSNumber) ?? "0")", for: .normal)
         
         // Do any additional setup after loading the view.
         self.title = "Pie Chart"
