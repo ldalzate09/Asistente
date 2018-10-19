@@ -20,7 +20,7 @@ class PieChartViewController: DemoBaseViewController {
         super.viewDidLoad()
         
         guard let balance = BankAccount.checkBalance() else { return }
-        balanceButton.setTitle("Account Balance: $\(balance)", for: .normal) 
+        balanceButton.setTitle("Saldo Disponible: $\(balance)", for: .normal)
         
         // Do any additional setup after loading the view.
         self.title = "Pie Chart"
@@ -104,7 +104,7 @@ class PieChartViewController: DemoBaseViewController {
         pFormatter.percentSymbol = " %"
         data.setValueFormatter(DefaultValueFormatter(formatter: pFormatter))
         
-        data.setValueFont(.systemFont(ofSize: 10, weight: .light))
+        data.setValueFont(.systemFont(ofSize: 11, weight: .light))
         data.setValueTextColor(.black)
         
         chartView.data = data
