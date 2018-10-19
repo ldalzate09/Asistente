@@ -241,7 +241,7 @@ class DemoBaseViewController: UIViewController, ChartViewDelegate {
         paragraphStyle.lineBreakMode = .byTruncatingTail
         paragraphStyle.alignment = .center
         
-        let centerText = NSMutableAttributedString(string: "Charts\nby Daniel Cohen Gindi")
+        let centerText = NSMutableAttributedString(string: "Charts by Insights Team")
         centerText.setAttributes([.font : UIFont(name: "HelveticaNeue-Light", size: 13)!,
                                   .paragraphStyle : paragraphStyle], range: NSRange(location: 0, length: centerText.length))
         centerText.addAttributes([.font : UIFont(name: "HelveticaNeue-Light", size: 11)!,
