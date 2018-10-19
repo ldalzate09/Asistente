@@ -89,7 +89,7 @@ enum Option {
 
 class DemoBaseViewController: UIViewController, ChartViewDelegate {
     private var optionsTableView: UITableView? = nil
-    let parties = ["Entradas Cine", "Paquete turistico", "Pago EPM", "Envio Dinero"]
+    let parties = ["Entradas Cine", "Paquete turistico", "Pago EPM", "Envio Dinero", "Preaprobado"]
     
     @IBOutlet weak var optionsButton: UIButton!
     var options: [Option]!
