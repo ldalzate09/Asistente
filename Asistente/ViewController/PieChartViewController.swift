@@ -8,14 +8,12 @@
 
 import UIKit
 import Charts
+import AVFoundation
 
 class PieChartViewController: DemoBaseViewController {
 
-    @IBOutlet var chartView: PieChartView!
-    @IBOutlet var sliderX: UISlider!
-    @IBOutlet var sliderY: UISlider!
-    @IBOutlet var sliderTextX: UITextField!
-    @IBOutlet var sliderTextY: UITextField!
+    @IBOutlet weak var chartView: PieChartView!
+    @IBOutlet weak var balanceButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,10 +51,10 @@ class PieChartViewController: DemoBaseViewController {
         chartView.entryLabelColor = .white
         chartView.entryLabelFont = .systemFont(ofSize: 12, weight: .light)
         
-        sliderX.value = 4
-        sliderY.value = 100
-        self.slidersValueChanged(nil)
-        
+        //sliderX.value = 4
+        //sliderY.value = 100
+        //self.slidersValueChanged(nil)
+        self.updateChartData()
         chartView.animate(xAxisDuration: 1.4, easingOption: .easeOutBack)
     }
     
@@ -66,7 +64,7 @@ class PieChartViewController: DemoBaseViewController {
             return
         }
         
-        self.setDataCount(Int(sliderX.value), range: UInt32(sliderY.value))
+        self.setDataCount(Int(4), range: UInt32(100))
     }
     
     func setDataCount(_ count: Int, range: UInt32) {
@@ -145,13 +143,28 @@ class PieChartViewController: DemoBaseViewController {
     
     // MARK: - Actions
     @IBAction func slidersValueChanged(_ sender: Any?) {
-        sliderTextX.text = "\(Int(sliderX.value))"
-        sliderTextY.text = "\(Int(sliderY.value))"
+        //sliderTextX.text = "\(Int(sliderX.value))"
+        //sliderTextY.text = "\(Int(sliderY.value))"
         
         self.updateChartData()
     }
     
-
+    @IBAction func showPreAprob(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Pre Aprobado", message: "Tienen un pre aprobado por $6'000.000", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancelar", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+        let string = "Tienes un pre aprobado por seis millones de pesos, ¿Deseas tomarlo?"
+        let utterance = AVSpeechUtterance(string: string)
+        utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")
+        
+        let synth = AVSpeechSynthesizer()
+        synth.speak(utterance)
+    }
+    
+    
     /*
     // MARK: - Navigation
 

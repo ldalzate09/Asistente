@@ -21,8 +21,8 @@
 		7B77CFD921781FE900F0959A /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B77CFD821781FE900F0959A /* BankAccount.swift */; };
 		7B77CFDB2178202D00F0959A /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B77CFD821781FE900F0959A /* BankAccount.swift */; };
 		DB52E013E6F59ED420FAAC99 /* Pods_Asistente.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD21C061549DE4F553A27BA /* Pods_Asistente.framework */; };
-		E95C34D52178FAD8009D7C73 /* PieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E95C34D42178FAD8009D7C73 /* PieChartViewController.xib */; };
-		E95C34DD2178FEB0009D7C73 /* DemoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95C34DC2178FEB0009D7C73 /* DemoBaseViewController.swift */; };
+		E93417F92179648300693BC7 /* DemoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93417F82179648300693BC7 /* DemoBaseViewController.swift */; };
+		E934180021796F0700693BC7 /* PieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E93417FF21796F0700693BC7 /* PieChartViewController.xib */; };
 		E95C34DF217915DF009D7C73 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95C34DE217915DF009D7C73 /* PieChartViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,8 +79,8 @@
 		7B0DF013217809B5001B2A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B77CFD821781FE900F0959A /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
 		7CD21C061549DE4F553A27BA /* Pods_Asistente.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asistente.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E95C34D42178FAD8009D7C73 /* PieChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PieChartViewController.xib; path = "../../Charts/ChartsDemo-iOS/XIBs/Demos/PieChartViewController.xib"; sourceTree = "<group>"; };
-		E95C34DC2178FEB0009D7C73 /* DemoBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoBaseViewController.swift; path = "../../../Charts/ChartsDemo-iOS/Swift/DemoBaseViewController.swift"; sourceTree = "<group>"; };
+		E93417F82179648300693BC7 /* DemoBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBaseViewController.swift; sourceTree = "<group>"; };
+		E93417FF21796F0700693BC7 /* PieChartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PieChartViewController.xib; sourceTree = "<group>"; };
 		E95C34DE217915DF009D7C73 /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +147,6 @@
 			children = (
 				E95C34DB2178FE73009D7C73 /* Utils */,
 				E95C34D62178FB6B009D7C73 /* ViewController */,
-				E95C34D42178FAD8009D7C73 /* PieChartViewController.xib */,
 				7B0DEFFB21780906001B2A81 /* Asistente.entitlements */,
 				7B0DEFE9217807A5001B2A81 /* AppDelegate.swift */,
 				7B0DEFEB217807A5001B2A81 /* ViewController.swift */,
@@ -156,6 +155,7 @@
 				7B0DEFF2217807A7001B2A81 /* LaunchScreen.storyboard */,
 				7B0DEFF5217807A7001B2A81 /* Info.plist */,
 				7B77CFD821781FE900F0959A /* BankAccount.swift */,
+				E93417FF21796F0700693BC7 /* PieChartViewController.xib */,
 			);
 			path = Asistente;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 		E95C34DB2178FE73009D7C73 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				E95C34DC2178FEB0009D7C73 /* DemoBaseViewController.swift */,
+				E93417F82179648300693BC7 /* DemoBaseViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -276,6 +276,9 @@
 					7B0DEFE5217807A5001B2A81 = {
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.Siri = {
 								enabled = 1;
 							};
@@ -316,7 +319,7 @@
 			files = (
 				7B0DEFF4217807A7001B2A81 /* LaunchScreen.storyboard in Resources */,
 				7B0DEFF1217807A7001B2A81 /* Assets.xcassets in Resources */,
-				E95C34D52178FAD8009D7C73 /* PieChartViewController.xib in Resources */,
+				E934180021796F0700693BC7 /* PieChartViewController.xib in Resources */,
 				7B0DEFEF217807A5001B2A81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,7 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E95C34DD2178FEB0009D7C73 /* DemoBaseViewController.swift in Sources */,
+				E93417F92179648300693BC7 /* DemoBaseViewController.swift in Sources */,
 				E95C34DF217915DF009D7C73 /* PieChartViewController.swift in Sources */,
 				7B0DEFEC217807A5001B2A81 /* ViewController.swift in Sources */,
 				7B77CFD921781FE900F0959A /* BankAccount.swift in Sources */,

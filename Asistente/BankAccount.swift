@@ -12,7 +12,7 @@ class BankAccount {
     
     private init() {}
     static let bankAccountKey = "Bank Account"
-    static let suiteName = "group.com.kiloloco.Siri-Bucks"
+    static let suiteName = "group.-25Y77FG78.co.com.bancolombia.eliza"
     
     static func setBalance(toAmount amount: Double) {
         guard let defaults = UserDefaults(suiteName: suiteName) else { return }
