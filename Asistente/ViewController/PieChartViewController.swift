@@ -14,6 +14,7 @@ class PieChartViewController: DemoBaseViewController {
 
     @IBOutlet weak var chartView: PieChartView!
     @IBOutlet weak var balanceButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +50,9 @@ class PieChartViewController: DemoBaseViewController {
         l.yEntrySpace = 0
         l.yOffset = 0
         //        chartView.legend = l
+        
+        self.balanceButton.layer.cornerRadius = 5
+        self.balanceButton.clipsToBounds = true
         
         // entry label styling
         chartView.entryLabelColor = .white
@@ -88,7 +92,8 @@ class PieChartViewController: DemoBaseViewController {
             + ChartColorTemplates.colorful()
             + ChartColorTemplates.liberty()
             + ChartColorTemplates.pastel()
-            + [UIColor(red: 51/255, green: 181/255, blue: 229/255, alpha: 1)]
+            + [UIColor (red: 45/255, green: 45/255, blue: 250/255, alpha: 1)]
+            //+ [UIColor (red: 51/255, green: 181/255, blue: 229/255, alpha: 1)]
         
         let data = PieChartData(dataSet: set)
         
@@ -99,8 +104,8 @@ class PieChartViewController: DemoBaseViewController {
         pFormatter.percentSymbol = " %"
         data.setValueFormatter(DefaultValueFormatter(formatter: pFormatter))
         
-        data.setValueFont(.systemFont(ofSize: 11, weight: .light))
-        data.setValueTextColor(.white)
+        data.setValueFont(.systemFont(ofSize: 9, weight: .light))
+        data.setValueTextColor(.black)
         
         chartView.data = data
         chartView.highlightValues(nil)
@@ -166,12 +171,15 @@ class PieChartViewController: DemoBaseViewController {
         
         let string = "Tienes un pre aprobado por seis millones de pesos, ¿Deseas tomarlo?"
         let utterance = AVSpeechUtterance(string: string)
-        utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")
+        utterance.voice = AVSpeechSynthesisVoice(language: "es-LA")
         
         let synth = AVSpeechSynthesizer()
         synth.speak(utterance)
     }
     
+    @IBAction func cancelViewController(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     /*
     // MARK: - Navigation

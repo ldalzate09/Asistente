@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PieChartViewController" customModule="Asistente" customModuleProvider="target">
             <connections>
                 <outlet property="balanceButton" destination="t9d-xl-8dF" id="0Jl-Zt-qhA"/>
+                <outlet property="cancelButton" destination="Oqc-PX-6kd" id="OAY-Ql-1qH"/>
                 <outlet property="chartView" destination="HCV-87-lOz" id="0F9-Xd-Rq4"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Aov-gy-JSu"/>
             </connections>
@@ -23,28 +24,50 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HCV-87-lOz" customClass="PieChartView" customModule="Charts">
                     <rect key="frame" x="0.0" y="20" width="375" height="501"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqc-PX-6kd">
+                            <rect key="frame" x="18" y="8" width="47" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="Cancelar"/>
+                            <connections>
+                                <action selector="cancelViewController:" destination="-1" eventType="touchUpInside" id="VUI-QO-mKs"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Oqc-PX-6kd" firstAttribute="leading" secondItem="HCV-87-lOz" secondAttribute="leading" constant="18" id="A7Q-BX-qbC"/>
+                        <constraint firstItem="Oqc-PX-6kd" firstAttribute="top" secondItem="HCV-87-lOz" secondAttribute="topMargin" id="QFm-bO-Ti5"/>
+                    </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9d-xl-8dF">
-                    <rect key="frame" x="164" y="552" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9d-xl-8dF">
+                    <rect key="frame" x="23" y="552" width="336" height="34"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="showPreAprob:" destination="-1" eventType="touchUpInside" id="iN0-zA-r5b"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.82431994818652843" green="0.82431994818652843" blue="0.82431994818652843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="t9d-xl-8dF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="164" id="72u-B4-yxx"/>
+                <constraint firstItem="t9d-xl-8dF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="23" id="72u-B4-yxx"/>
                 <constraint firstItem="t9d-xl-8dF" firstAttribute="top" secondItem="HCV-87-lOz" secondAttribute="bottom" constant="31" id="Gvy-UW-gWC"/>
                 <constraint firstItem="HCV-87-lOz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="LDC-q2-eDr"/>
-                <constraint firstItem="t9d-xl-8dF" firstAttribute="centerX" secondItem="HCV-87-lOz" secondAttribute="centerX" id="UAq-rW-oIJ"/>
+                <constraint firstItem="t9d-xl-8dF" firstAttribute="centerX" secondItem="HCV-87-lOz" secondAttribute="centerX" constant="3.5" id="UAq-rW-oIJ"/>
                 <constraint firstItem="HCV-87-lOz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="d7g-OE-EJa"/>
                 <constraint firstAttribute="trailing" secondItem="HCV-87-lOz" secondAttribute="trailing" id="ueW-At-uWD"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="HCV-87-lOz" secondAttribute="bottom" constant="146" id="yTT-eA-C4p"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="41" y="225"/>
+            <point key="canvasLocation" x="40.799999999999997" y="224.4377811094453"/>
         </view>
     </objects>
 </document>

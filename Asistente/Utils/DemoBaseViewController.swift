@@ -176,7 +176,7 @@ class DemoBaseViewController: UIViewController, ChartViewDelegate {
         }
         
         let optionsTableView = UITableView()
-        optionsTableView.backgroundColor = UIColor(white: 0, alpha: 0.9)
+        optionsTableView.backgroundColor = UIColor(white: 0.7, alpha: 0.9)
         optionsTableView.delegate = self
         optionsTableView.dataSource = self
         
@@ -241,7 +241,8 @@ class DemoBaseViewController: UIViewController, ChartViewDelegate {
         paragraphStyle.lineBreakMode = .byTruncatingTail
         paragraphStyle.alignment = .center
         
-        let centerText = NSMutableAttributedString(string: "Charts by Insights Team")
+
+        let centerText = NSMutableAttributedString(string: "Charts \n by Insights Team")
         centerText.setAttributes([.font : UIFont(name: "HelveticaNeue-Light", size: 13)!,
                                   .paragraphStyle : paragraphStyle], range: NSRange(location: 0, length: centerText.length))
         centerText.addAttributes([.font : UIFont(name: "HelveticaNeue-Light", size: 11)!,
