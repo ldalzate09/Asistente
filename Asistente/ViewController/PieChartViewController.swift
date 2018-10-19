@@ -158,6 +158,8 @@ class PieChartViewController: DemoBaseViewController {
         alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: { action in
             BankAccount.deposit(amount: 6000000)
             self.setDataCount(Int(5), range: UInt32(100))
+            guard let balance = BankAccount.checkBalance() else { return }
+            self.balanceButton.setTitle("Account Balance: $\(balance)", for: .normal) 
         }))
         alert.addAction(UIAlertAction(title: "Cancelar", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
