@@ -20,6 +20,7 @@
 		7B0DF019217809B5001B2A81 /* Intents Handler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B0DF000217809B4001B2A81 /* Intents Handler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7B77CFD921781FE900F0959A /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B77CFD821781FE900F0959A /* BankAccount.swift */; };
 		7B77CFDB2178202D00F0959A /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B77CFD821781FE900F0959A /* BankAccount.swift */; };
+		7B7E4ADC21797D7700997BFA /* fondofinal.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E4ADB21797D7700997BFA /* fondofinal.jpeg */; };
 		DB52E013E6F59ED420FAAC99 /* Pods_Asistente.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD21C061549DE4F553A27BA /* Pods_Asistente.framework */; };
 		E93417F92179648300693BC7 /* DemoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93417F82179648300693BC7 /* DemoBaseViewController.swift */; };
 		E934180021796F0700693BC7 /* PieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E93417FF21796F0700693BC7 /* PieChartViewController.xib */; };
@@ -78,6 +79,7 @@
 		7B0DF011217809B5001B2A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		7B0DF013217809B5001B2A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B77CFD821781FE900F0959A /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
+		7B7E4ADB21797D7700997BFA /* fondofinal.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fondofinal.jpeg; path = ../../Downloads/fondofinal.jpeg; sourceTree = "<group>"; };
 		7CD21C061549DE4F553A27BA /* Pods_Asistente.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asistente.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93417F82179648300693BC7 /* DemoBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBaseViewController.swift; sourceTree = "<group>"; };
 		E93417FF21796F0700693BC7 /* PieChartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PieChartViewController.xib; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		7B0DEFE8217807A5001B2A81 /* Asistente */ = {
 			isa = PBXGroup;
 			children = (
+				7B7E4ADB21797D7700997BFA /* fondofinal.jpeg */,
 				E95C34DB2178FE73009D7C73 /* Utils */,
 				E95C34D62178FB6B009D7C73 /* ViewController */,
 				7B0DEFFB21780906001B2A81 /* Asistente.entitlements */,
@@ -319,6 +322,7 @@
 			files = (
 				7B0DEFF4217807A7001B2A81 /* LaunchScreen.storyboard in Resources */,
 				7B0DEFF1217807A7001B2A81 /* Assets.xcassets in Resources */,
+				7B7E4ADC21797D7700997BFA /* fondofinal.jpeg in Resources */,
 				E934180021796F0700693BC7 /* PieChartViewController.xib in Resources */,
 				7B0DEFEF217807A5001B2A81 /* Main.storyboard in Resources */,
 			);
